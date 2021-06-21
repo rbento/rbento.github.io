@@ -34,15 +34,15 @@ const galleryItems = [
 	[
 		{
 			src: "assets/images/star-ocean/star-ocean-01.png",
-			title: "Visualizing math vectors through DebugDraw<small>Star Ocean (C#, XNA)</small>",
+			title: "DebugDraw allows for easy math vector visualization<small>Star Ocean (C#, XNA)</small>",
 		},
 		{
 			src: "assets/images/star-ocean/star-ocean-02.png",
-			title: "Steering Behaviors (Arrive) applied at the starting scene<small>Star Ocean (C#, XNA)</small>",
+			title: "Game Start sequence utilizes the Arrive steering behavior<small>Star Ocean (C#, XNA)</small>",
 		},
 		{
 			src: "assets/images/star-ocean/star-ocean-03.png",
-			title: "AABB collision detection<small>Star Ocean (C#, XNA)</small>",
+			title: "Ships fly through space by inertia, following their linear momentum<small>Star Ocean (C#, XNA)</small>",
 		},
 		{
 			src: "assets/images/star-ocean/star-ocean-04.png",
@@ -66,11 +66,11 @@ const galleryItems = [
 		},
 		{
 			src: "assets/images/raven-attack/raven-attack-02.png",
-			title: "Steering Behaviors guiding raven's next move<small>Raven Attack (C#, XNA)</small>",
+			title: "Raven movement is powered by Steering Behaviors (wander, flee, seek)<small>Raven Attack (C#, XNA)</small>",
 		},
 		{
 			src: "assets/images/raven-attack/raven-attack-03.png",
-			title: "Gravity applied to bombs with random mass creating a nice effect<small>Raven Attack (C#, XNA)</small>",
+			title: "Bombs have random weight and fall due to gravity<small>Raven Attack (C#, XNA)</small>",
 		},
 		{
 			src: "assets/images/raven-attack/raven-attack-04.png",
@@ -90,7 +90,7 @@ const galleryItems = [
 	[
 		{
 			src: "assets/images/ai-pong/ai-pong-01.png",
-			title: "Two bots available<small>AI Pong (C#, XNA)</small>",
+			title: "Demonstrates autonomous behavior through State Machines, Embedded Scripting and Math<small>AI Pong (C#, XNA)</small>",
 		},
 		{
 			src: "assets/images/ai-pong/ai-pong-02.png",
@@ -98,11 +98,11 @@ const galleryItems = [
 		},
 		{
 			src: "assets/images/ai-pong/ai-pong-03.png",
-			title: "DebugDraw showing bot's next move guided by raycast<small>AI Pong (C#, XNA)</small>",
+			title: "Raycast determines the coordinate a bot should go to intercept the ball<small>AI Pong (C#, XNA)</small>",
 		},
 		{
 			src: "assets/images/ai-pong/ai-pong-04.png",
-			title: "On-screen debug info is visible<small>AI Pong (C#, XNA)</small>",
+			title: "Bot logic is implemented via an external script which is then called from C#<small>AI Pong (C#, XNA)</small>",
 		},
 		{
 			src: "https://www.youtube.com/watch?v=b5Lgl2dkx64",
@@ -126,7 +126,7 @@ const galleryItems = [
 		},
 		{
 			src: "assets/images/crazy-maze/crazy-maze-03.png",
-			title: "Per-pixel collision with the mouse pointer position using black/white image as a mask<small>Crazy Maze (C#, XNA)</small>",
+			title: "Per-pixel collision with the mouse pointer position against a black/white texture mask<small>Crazy Maze (C#, XNA)</small>",
 		},
 		{
 			src: "https://www.youtube.com/watch?v=ojnamei2-Qk",
@@ -166,11 +166,11 @@ const galleryItems = [
 	[
 		{
 			src: "assets/images/paper-cannon/paper-cannon-01.png",
-			title: "All elements of a game<small>Paper Cannon (C#, XNA)</small>",
+			title: "Game elements like banner sequence, charging shots, lifebar and bullet selection<small>Paper Cannon (C#, XNA)</small>",
 		},
 		{
 			src: "assets/images/paper-cannon/paper-cannon-02.png",
-			title: "Wind and gravity forces are applied to the paper ball<small>Paper Cannon (C#, XNA)</small>",
+			title: "Paper ball trajectory is affected by forces like gravity and wind<small>Paper Cannon (C#, XNA)</small>",
 		},
 		{
 			src: "assets/images/paper-cannon/paper-cannon-03.png",
