@@ -29,15 +29,14 @@ p {
 .site {
   display: grid;
   margin: 0 auto;
-  grid-template-columns: 100%;
-  grid-template-rows:  42px 28px 42px auto auto 52px;
+  grid-template-columns: 50%;
+  grid-template-rows: 42px 28px auto auto 52px;
   grid-template-areas:
-    "title"
-    "subtitle"
-    "media"
-    "gallery"
-    "articles"
-    "footer";
+    "title title"
+    "subtitle media"
+    "gallery gallery"
+    "articles articles"
+    "footer footer";
     max-width: 292px;
 }
 
@@ -103,21 +102,23 @@ p {
 
 .social-media {
 	display: inline-block;
+  float:  right;
 }
 
 .social-media :last-child {
+  margin-left: -1px;
   margin-right: 0;
 }
 
 .social-media-icon {
   margin: 0 5px 0 0;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .social-media-icon > img {
 	width: auto;
-	height: 32px;
+	height: 24px;
 }
 
 .source-code-popup {
