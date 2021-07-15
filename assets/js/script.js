@@ -268,10 +268,6 @@ const galleryItems = [
 	],
 ];
 
-window.formbutton = window.formbutton || function () {
-	(formbutton.q = formbutton.q || []).push(arguments)
-};
-
 $(document).ready(function () {
 	for (let galleryIndex = 0; galleryIndex < galleryItems.length; galleryIndex++) {
 		let gallery = $("#gallery-" + galleryIndex);
@@ -290,88 +286,4 @@ $(document).ready(function () {
 			}
 		});
 	}
-
-	formbutton("create", {
-		theme: "minimal",
-		action: "https://formspree.io/f/mwkabavo",
-		buttonImg: "<i class='fas fa-comment' style='font-size:24px'/>",
-		title: "Contact",
-		fields: [
-			{
-				name: "name",
-				type: "text",
-				label: "Name",
-				required: true,
-				style: {
-					label: {
-						fontWeight: "bold",
-					}
-				}
-			},
-			{
-				name: "email",
-				type: "email",
-				label: "Email",
-				required: true,
-				placeholder: "your@email.com",
-				style: {
-					label: {
-						fontWeight: "bold",
-					}
-				}
-			},
-			{
-				name: "message",
-				type: "textarea",
-				label: "Message",
-				placeholder: "What's on your mind?",
-				style: {
-					label: {
-						fontWeight: "bold",
-					}
-				}
-			},
-			{type: "submit"}
-		],
-		styles: {
-			fontFamily: "Roboto,Arial",
-			body: {
-				backgroundColor: "whitesmoke"
-			},
-			title: {
-				backgroundColor: "black",
-				color: "white",
-			},
-			submitInput: {
-				backgroundColor: "black",
-				color: "white",
-			},
-			formStatus: {
-				backgroundColor: "whitesmoke"
-			},
-			textInput: {
-				backgroundColor: "#ECECEC",
-				color: "black"
-			},
-			emailInput: {
-				backgroundColor: "#ECECEC",
-				color: "black"
-			},
-			textareaInput: {
-				backgroundColor: "#ECECEC",
-				color: "black"
-			},
-			button: {
-				backgroundColor: "black",
-				color: "whitesmoke",
-			}
-		},
-		onResponse: function(ok, setStatus) {
-			if (ok) {
-				setStatus("<span style='color:seagreen;font-weight:bold;'>Awesome!<br><br>We'll be in touch shortly!<br><br>Thanks!</span>");
-			} else {
-				setStatus("<span style='color:darkred;font-weight:bold;'>Unable to send your message.<br><br>We've been notified.</span>");
-			}
-		}
-	});
 });
