@@ -1,27 +1,27 @@
 
 * {
-	font-family: monospace;
+    font-family: monospace;
 }
 
 body {
-	margin: 8px;
+    margin: 8px;
   padding:  0;
-	background-color: whitesmoke;
-	overflow: scroll;
+    background-color: whitesmoke;
+    overflow: scroll;
 }
 
 a, a:visited, a:focus, a:active {
-	color: steelblue;
-	text-decoration-line: none;
+    color: steelblue;
+    text-decoration-line: none;
 }
 
 a:hover {
-	color: lightsteelblue;
+    color: lightsteelblue;
 }
 
 p {
-	line-height: 22px;
-	text-align: justify;
+    line-height: 22px;
+    text-align: justify;
 }
 
 /* Layout */
@@ -30,10 +30,9 @@ p {
   display: grid;
   margin: 0 auto;
   grid-template-columns: 50%;
-  grid-template-rows: 42px 28px auto auto 52px;
+  grid-template-rows: 42px auto auto 52px;
   grid-template-areas:
-    "title title"
-    "subtitle media"
+    "title media"
     "gallery gallery"
     "articles articles"
     "footer footer";
@@ -64,13 +63,7 @@ p {
 
 .title {
   grid-area: title;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.subtitle {
-  grid-area: subtitle;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -84,24 +77,24 @@ p {
 
 .footer {
   grid-area: footer;
-	background: black;
+    background: black;
 }
 
 /* Content */
 
 .footer > p {
-	margin-right: 16px;
-	font-weight: bold;
-	text-align: right;
-	color: whitesmoke;
+    margin-right: 16px;
+    font-weight: bold;
+    text-align: right;
+    color: whitesmoke;
 }
 
 .pointer {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .social-media {
-	display: inline-block;
+    display: inline-block;
   float:  right;
 }
 
@@ -117,22 +110,22 @@ p {
 }
 
 .social-media-icon > img {
-	width: auto;
-	height: 24px;
+    width: auto;
+    height: 24px;
 }
 
 .source-code-popup {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	margin-left: -360px;
-	margin-top: -270px;
-	width: 720px;
-	height: 540px;
-	line-height: 540px;
-	text-align: center;
-	background: black;
-	color: gray;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -360px;
+    margin-top: -270px;
+    width: 720px;
+    height: 540px;
+    line-height: 540px;
+    text-align: center;
+    background: black;
+    color: gray;
 }
 
 /* Gallery - Games */
