@@ -24,11 +24,6 @@ const galleryItems = [
 			src: "https://www.youtube.com/watch?v=GtyTj3LcjBY",
 			title: "YouTube<small>Red Sector A (C#, Unity)</small>",
 			type: "iframe"
-		},
-		{
-			src: '<div class="source-code-popup">View the <a href="https://github.com/rbento/cs-unity-red-sector-a" target="_blank">Source Code</a> on GitHub</div>',
-			title: "GitHub<small>Red Sector A (C#, Unity)</small>",
-			type: "inline",
 		}
 	],
 	[
@@ -52,11 +47,6 @@ const galleryItems = [
 			src: "https://www.youtube.com/watch?v=cAAxThfsJ2Q",
 			title: "YouTube<small>Star Ocean (C#, XNA)</small>",
 			type: "iframe"
-		},
-		{
-			src: '<div class="source-code-popup">View the <a href="https://github.com/rbento/cs-xna-star-ocean" target="_blank">Source Code</a> on GitHub</div>',
-			title: "GitHub<small>Star Ocean (C#, XNA)</small>",
-			type: "inline",
 		}
 	],
 	[
@@ -80,11 +70,6 @@ const galleryItems = [
 			src: "https://www.youtube.com/watch?v=LFwflhdiSIM",
 			title: "YouTube<small>Raven Attack (C#, XNA)</small>",
 			type: "iframe"
-		},
-		{
-			src: '<div class="source-code-popup">View the <a href="https://github.com/rbento/cs-xna-raven-attack" target="_blank">Source Code</a> on GitHub</div>',
-			title: "GitHub<small>Raven Attack (C#, XNA)</small>",
-			type: "inline",
 		}
 	],
 	[
@@ -108,11 +93,6 @@ const galleryItems = [
 			src: "https://www.youtube.com/watch?v=b5Lgl2dkx64",
 			title: "YouTube<small>AI Pong (C#, XNA)</small>",
 			type: "iframe"
-		},
-		{
-			src: '<div class="source-code-popup">View the <a href="https://github.com/rbento/cs-xna-ai-pong" target="_blank">Source Code</a> on GitHub</div>',
-			title: "GitHub<small>AI Pong (C#, XNA)</small>",
-			type: "inline",
 		}
 	],
 	[
@@ -132,11 +112,6 @@ const galleryItems = [
 			src: "https://www.youtube.com/watch?v=ojnamei2-Qk",
 			title: "YouTube<small>Crazy Maze (C#, XNA)</small>",
 			type: "iframe"
-		},
-		{
-			src: '<div class="source-code-popup">View the <a href="https://github.com/rbento/cs-xna-crazy-maze" target="_blank">Source Code</a> on GitHub</div>',
-			title: "GitHub<small>Crazy Maze (C#, XNA)</small>",
-			type: "inline",
 		}
 	],
 	[
@@ -156,11 +131,6 @@ const galleryItems = [
 			src: "https://www.youtube.com/watch?v=AqFTpbkKTjU",
 			title: "YouTube<small>Ballz 'n Cupz (C#, XNA)</small>",
 			type: "iframe"
-		},
-		{
-			src: '<div class="source-code-popup">View the <a href="https://github.com/rbento/cs-xna-ballz-n-cupz" target="_blank">Source Code</a> on GitHub</div>',
-			title: "GitHub<small>Ballz 'n Cupz (C#, XNA)</small>",
-			type: "inline",
 		}
 	],
 	[
@@ -180,11 +150,6 @@ const galleryItems = [
 			src: "https://www.youtube.com/watch?v=oHEJ6jUg94U",
 			title: "YouTube<small>Paper Cannon (C#, XNA)</small>",
 			type: "iframe"
-		},
-		{
-			src: '<div class="source-code-popup">View the <a href="https://github.com/rbento/cs-xna-paper-cannon" target="_blank">Source Code</a> on GitHub</div>',
-			title: "GitHub<small>Paper Cannon (C#, XNA)</small>",
-			type: "inline",
 		}
 	],
 	[
@@ -204,11 +169,6 @@ const galleryItems = [
 			src: "https://www.youtube.com/watch?v=lyHsgySPR1w",
 			title: "YouTube<small>Woops! Ex (C#, XNA)</small>",
 			type: "iframe"
-		},
-		{
-			src: '<div class="source-code-popup">View the <a href="https://github.com/rbento/cs-xna-woops-ex" target="_blank">Source Code</a> on GitHub</div>',
-			title: "GitHub<small>Woops! Ex (C#, XNA)</small>",
-			type: "inline",
 		}
 	],
 	[
@@ -227,11 +187,6 @@ const galleryItems = [
 		{
 			src: "assets/images/ballz-n-cupz-ios/ballz-n-cupz-ios-04.png",
 			title: "Object-oriented approach<small>Ballz n' Cupz (Objective-C, iOS)</small>",
-		},
-		{
-			src: '<div class="source-code-popup">View the <a href="https://github.com/rbento/objc-ios-ballz-n-cupz" target="_blank">Source Code</a> on GitHub</div>',
-			title: "GitHub<small>Ballz n' Cupz (Objective-C, iOS)</small>",
-			type: "inline",
 		}
 	],
 	[
@@ -259,11 +214,6 @@ const galleryItems = [
 			src: "https://www.youtube.com/watch?v=sYxnB48sPLM",
 			title: "YouTube<small>Qubz Console (C++)</small>",
 			type: "iframe"
-		},
-		{
-			src: '<div class="source-code-popup">View the <a href="https://github.com/rbento/cpp-console-qubz" target="_blank">Source Code</a> on GitHub</div>',
-			title: "GitHub<small>Qubz Console (C++)</small>",
-			type: "inline",
 		}
 	],
 ];
