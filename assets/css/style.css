@@ -5,7 +5,7 @@
 
 body {
     margin: 8px;
-  padding:  0;
+    padding: 0;
     background-color: whitesmoke;
     overflow: scroll;
 }
@@ -27,22 +27,23 @@ p {
 /* Layout */
 
 .site {
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: 50%;
-  grid-template-rows: 42px auto auto 52px;
-  grid-template-areas:
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 50%;
+    grid-template-rows: 42px auto auto 52px;
+    grid-template-areas:
     "title media"
     "gallery gallery"
     "articles articles"
-    "footer footer";
+    "footer footer"
+    "email email";
     max-width: 292px;
 }
 
 .games {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
     "red-sector-a red-sector-a red-sector-a red-sector-a"
     "red-sector-a red-sector-a red-sector-a red-sector-a"
     "red-sector-a red-sector-a red-sector-a red-sector-a"
@@ -58,26 +59,30 @@ p {
 /* Areas */
 
 .media {
-  grid-area: media;
+    grid-area: media;
 }
 
 .title {
-  grid-area: title;
-  font-size: 18px;
-  font-weight: bold;
+    grid-area: title;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .gallery {
-  grid-area: gallery;
+    grid-area: gallery;
 }
 
 .articles {
-  grid-area: articles;
+    grid-area: articles;
 }
 
 .footer {
-  grid-area: footer;
+    grid-area: footer;
     background: black;
+}
+
+.email {
+    grid-area: email;
 }
 
 /* Content */
@@ -89,24 +94,31 @@ p {
     color: whitesmoke;
 }
 
+.email > p {
+    margin-right: 16px;
+    font-weight: bold;
+    text-align: right;
+    color: black;
+}
+
 .pointer {
     cursor: pointer;
 }
 
 .social-media {
     display: inline-block;
-  float:  right;
+    float: right;
 }
 
 .social-media :last-child {
-  margin-left: -1px;
-  margin-right: 0;
+    margin-left: -1px;
+    margin-right: 0;
 }
 
 .social-media-icon {
-  margin: 0 5px 0 0;
-  width: 24px;
-  height: 24px;
+    margin: 0 5px 0 0;
+    width: 24px;
+    height: 24px;
 }
 
 .social-media-icon > img {
@@ -131,41 +143,41 @@ p {
 /* Gallery - Games */
 
 .red-sector-a {
-  grid-area: red-sector-a;
+    grid-area: red-sector-a;
 }
 
 .star-ocean {
-  grid-area: star-ocean;
+    grid-area: star-ocean;
 }
 
 .raven-attack {
-  grid-area: raven-attack;
+    grid-area: raven-attack;
 }
 
 .ai-pong {
-  grid-area: ai-pong;
+    grid-area: ai-pong;
 }
 
 .crazy-maze {
-  grid-area: crazy-maze;
+    grid-area: crazy-maze;
 }
 
 .ballz-n-cupz {
-  grid-area: ballz-n-cupz;
+    grid-area: ballz-n-cupz;
 }
 
 .paper-cannon {
-  grid-area:  paper-cannon;
+    grid-area: paper-cannon;
 }
 
 .woops-ex {
-  grid-area: woops-ex;
+    grid-area: woops-ex;
 }
 
 .qubz-console {
-  grid-area: qubz-console;
+    grid-area: qubz-console;
 }
 
 .ballz-n-cupz-ios {
-  grid-area: ballz-n-cupz-ios;
+    grid-area: ballz-n-cupz-ios;
 }
