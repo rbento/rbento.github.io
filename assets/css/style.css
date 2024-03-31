@@ -30,13 +30,12 @@ p {
     display: grid;
     margin: 0 auto;
     grid-template-columns: 50%;
-    grid-template-rows: 42px auto auto 52px;
+    grid-template-rows: 42px 20px auto 54px;
     grid-template-areas:
     "title media"
+    "work projects"
     "gallery gallery"
-    "articles articles"
-    "footer footer"
-    "email email";
+    "footer footer";
     max-width: 292px;
 }
 
@@ -44,15 +43,12 @@ p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-    "red-sector-a red-sector-a red-sector-a red-sector-a"
-    "red-sector-a red-sector-a red-sector-a red-sector-a"
-    "red-sector-a red-sector-a red-sector-a red-sector-a"
-    "red-sector-a red-sector-a red-sector-a red-sector-a"
-    "star-ocean star-ocean raven-attack raven-attack"
-    "star-ocean star-ocean raven-attack raven-attack"
-    "ai-pong ai-pong crazy-maze ballz-n-cupz"
-    "ai-pong ai-pong paper-cannon woops-ex"
-    "qubz-console ballz-n-cupz-ios . .";
+    "ea-sports-fc-24 ea-sports-fc-24 red-sector-a star-ocean"
+    "ea-sports-fc-24 ea-sports-fc-24 raven-attack ai-pong"
+    "madden-nfl-24 madden-nfl-24 paper-cannon ballz-n-cupz"
+    "madden-nfl-24 madden-nfl-24 crazy-maze woops-ex"
+    "ea-sports-pga-tour ea-sports-pga-tour qubz-console ballz-n-cupz-ios"
+    "ea-sports-pga-tour ea-sports-pga-tour . .";
     grid-gap: 8px;
 }
 
@@ -68,21 +64,36 @@ p {
     font-weight: bold;
 }
 
-.gallery {
-    grid-area: gallery;
+.subtitle {
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    color: lightgray;
 }
 
-.articles {
-    grid-area: articles;
+.column-title {
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    color: silver;
+}
+
+.work {
+    grid-area: work;
+}
+
+.side-projects {
+    grid-area: projects;
+}
+
+.gallery {
+    grid-area: gallery;
 }
 
 .footer {
     grid-area: footer;
     background: black;
-}
-
-.email {
-    grid-area: email;
+    margin-top: 8px;
 }
 
 /* Content */
@@ -94,19 +105,11 @@ p {
     color: whitesmoke;
 }
 
-.email > p {
-    margin-right: 16px;
-    font-weight: bold;
-    text-align: right;
-    color: black;
-}
-
 .pointer {
     cursor: pointer;
 }
 
 .social-media {
-    display: inline-block;
     float: right;
 }
 
@@ -141,6 +144,18 @@ p {
 }
 
 /* Gallery - Games */
+
+.ea-sports-fc-24 {
+    grid-area: ea-sports-fc-24;
+}
+
+.madden-nfl-24 {
+    grid-area: madden-nfl-24;
+}
+
+.ea-sports-pga-tour {
+    grid-area: ea-sports-pga-tour;
+}
 
 .red-sector-a {
     grid-area: red-sector-a;
