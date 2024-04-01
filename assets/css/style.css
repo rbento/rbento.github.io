@@ -60,13 +60,13 @@ p {
 
 .title {
     grid-area: title;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
 }
 
 .subtitle {
     float: left;
-    font-size: 9px;
+    font-size: 10px;
     font-weight: bold;
     color: silver;
 }
