@@ -30,7 +30,7 @@ p {
     display: grid;
     margin: 0 auto;
     grid-template-columns: 50%;
-    grid-template-rows: 42px 20px auto 54px;
+    grid-template-rows: 42px 20px auto 48px;
     grid-template-areas:
     "title media"
     "work projects"
@@ -66,14 +66,14 @@ p {
 
 .subtitle {
     float: left;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: bold;
     color: silver;
 }
 
 .column-title {
     text-align: center;
-    vertical-align: middle;
+    font-size: 10px;
     font-weight: bold;
 }
 
@@ -91,16 +91,16 @@ p {
 
 .footer {
     grid-area: footer;
-    background: black;
     margin-top: 8px;
+    background: black;
 }
 
 /* Content */
 
 .footer > p {
-    margin-right: 16px;
+    font-size: 10px;
     font-weight: bold;
-    text-align: right;
+    text-align: center;
     color: whitesmoke;
 }
 
