@@ -60,22 +60,21 @@ p {
 
 .title {
     grid-area: title;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
 }
 
 .subtitle {
     float: left;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
-    color: lightgray;
+    color: silver;
 }
 
 .column-title {
     text-align: center;
     vertical-align: middle;
     font-weight: bold;
-    color: silver;
 }
 
 .work {
