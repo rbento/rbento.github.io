@@ -43,18 +43,18 @@ p {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-areas:
-    "ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 red-sector-a red-sector-a star-ocean star-ocean"
-    "ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 red-sector-a red-sector-a star-ocean star-ocean"
-    "ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 raven-attack raven-attack . ."
-    "ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 raven-attack raven-attack . ."
-    "madden-nfl-24 madden-nfl-24 madden-nfl-24 madden-nfl-24 . . . ."
-    "madden-nfl-24 madden-nfl-24 madden-nfl-24 madden-nfl-24 . . . ."
-    "madden-nfl-24 madden-nfl-24 madden-nfl-24 madden-nfl-24 . . . ."
-    "madden-nfl-24 madden-nfl-24 madden-nfl-24 madden-nfl-24 . . . ."
-    "ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour . . . ."
-    "ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour . . . ."
-    "ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour . . . ."
-    "ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour . . . .";
+    "ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 red-sector-a red-sector-a red-sector-a red-sector-a"
+    "ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 red-sector-a red-sector-a red-sector-a red-sector-a"
+    "ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 red-sector-a red-sector-a red-sector-a red-sector-a"
+    "ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 red-sector-a red-sector-a red-sector-a red-sector-a"
+    "madden-nfl-24 madden-nfl-24 madden-nfl-24 madden-nfl-24 raven-attack raven-attack raven-attack raven-attack"
+    "madden-nfl-24 madden-nfl-24 madden-nfl-24 madden-nfl-24 raven-attack raven-attack raven-attack raven-attack"
+    "madden-nfl-24 madden-nfl-24 madden-nfl-24 madden-nfl-24 raven-attack raven-attack raven-attack raven-attack"
+    "madden-nfl-24 madden-nfl-24 madden-nfl-24 madden-nfl-24 raven-attack raven-attack raven-attack raven-attack"
+    "ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour star-ocean star-ocean star-ocean star-ocean"
+    "ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour star-ocean star-ocean star-ocean star-ocean"
+    "ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour star-ocean star-ocean star-ocean star-ocean"
+    "ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour star-ocean star-ocean star-ocean star-ocean";
     grid-gap: 8px;
 }
 
