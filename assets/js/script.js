@@ -2,19 +2,19 @@ const galleryItems = [
 	[
 		{
 			src: "assets/images/ea-sports-fc-24/ea-sports-fc-24-01.png",
-			title: "[2023] Software Engineer III - EA Digital Platform - Gameplay Services - Performed capacity planning for a service utlized on the EA SPORTS FC 24 game launch</small>",
+			title: "[2023] Software Engineer III - EA Digital Platform - Gameplay Services</small>",
 		}
 	],
 	[
 		{
 			src: "assets/images/madden-nfl-24/madden-nfl-24-01.png",
-			title: "[2023] Software Engineer III - EA Digital Platform - Gameplay Services - Develeloped a Leaderboards service utilized by the Madden NFL 24 game client</small>",
+			title: "[2023] Software Engineer III - EA Digital Platform - Gameplay Services - Developed a Leaderboards API service which is utilized by the game</small>",
 		}
 	],
 	[
 		{
 			src: "assets/images/ea-sports-pga-tour/ea-sports-pga-tour-01.png",
-			title: "[2023] Software Engineer III - EA Digital Platform - Gameplay Services - Developed a Leaderboards service utilized by the EA SPORTS PGA TOUR game client</small>",
+			title: "[2023] Software Engineer III - EA Digital Platform - Gameplay Services - Developed a Leaderboards API service which is utilized by the game</small>",
 		}
 	],
 	[
