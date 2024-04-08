@@ -236,22 +236,28 @@ const galleryItems = [
 	],
 ];
 
+function loadImage(galleryIndex, targetId) {
+	let gallery = $(targetId);
+	gallery.magnificPopup({
+		items: galleryItems[galleryIndex],
+		tLoading: "Loading #%curr%...",
+		mainClass: "mfp-img-mobile",
+		type: 'image',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: "<a href='%url%'>The image #%curr%</a> could not be loaded."
+		}
+	});
+}
+
 $(document).ready(function () {
 	for (let galleryIndex = 0; galleryIndex < galleryItems.length; galleryIndex++) {
-		let gallery = $("#gallery-" + galleryIndex);
-		gallery.magnificPopup({
-			items: galleryItems[galleryIndex],
-			tLoading: "Loading #%curr%...",
-			mainClass: "mfp-img-mobile",
-			type: 'image',
-			gallery: {
-				enabled: true,
-				navigateByImgClick: true,
-				preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-			},
-			image: {
-				tError: "<a href='%url%'>The image #%curr%</a> could not be loaded."
-			}
-		});
+		for (let imageIndex = 1; imageIndex < 4; imageIndex++) {
+			loadImage(galleryIndex, ".gallery image-" + imageIndex);
+		}
 	}
 });
