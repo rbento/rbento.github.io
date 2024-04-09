@@ -120,24 +120,24 @@ summary {
 
 .title {
     grid-area: title;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: bolder;
 }
 
 .subtitle {
     float: left;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 19px;
+    font-weight: bolder;
     color: darkgray;
 }
 
 .section-title {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 33px;
+    font-weight: bolder;
     text-align: right;
-    color: darkgray;
+    color: black;
     margin: auto 0;
-    border-bottom: #f0f0f0 1px solid;
+    border-bottom: #f0f0f0 4px solid;
 }
 
 .featured-title {
@@ -188,7 +188,7 @@ summary {
 /* Content */
 
 .footer>p {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     text-align: center;
     color: whitesmoke;
@@ -254,19 +254,19 @@ summary {
     position: absolute;
     top: 8px;
     left: 8px;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: bolder;
     color: whitesmoke;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: 1px 1px black;
 }
 
 .tech {
     position: absolute;
     right: 8px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: whitesmoke;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: 1px 1px black;
 }
 
 .p1 {
@@ -274,15 +274,15 @@ summary {
 }
 
 .p2 {
-    top: 26px;
+    top: 27px;
 }
 
 .p3 {
-    top: 44px;
+    top: 46px;
 }
 
 .p4 {
-    top: 62px;
+    top: 65px;
 }
 
 .summary-project {
