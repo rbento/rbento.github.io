@@ -13,8 +13,13 @@
     src: url(../fonts/Roboto/Roboto-Bold.ttf);
 }
 
+@font-face {
+    font-family: RobotoMedium;
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
 * {
-    font-family: Roboto;
+    font-family: RobotoMedium;
 }
 
 body {
@@ -36,13 +41,13 @@ a:hover {
     color: lightsteelblue;
 }
 
+a {
+    font-family: RobotoMedium;
+}
+
 p {
     line-height: 22px;
     text-align: justify;
-}
-
-details {
-    margin: 30px auto;
 }
 
 details[open] summary {
@@ -78,13 +83,25 @@ li:first-child {
 
 /* Layout */
 
+.summary {
+    display: grid;
+    font-weight: bold;
+    margin: 0 auto;
+    grid-template-columns: 60px auto;
+    grid-template-rows: 142px 28px;
+    grid-template-areas:
+        "item-image item-image"
+        "item-title item-title";
+    max-width: 292px;
+}
+
 .site {
     display: grid;
     margin: 0 auto;
     grid-template-columns: 50%;
     grid-template-rows: 60px auto;
     grid-template-areas:
-        "title media"
+        "title links"
         "featured-title featured-title"
         "featured-gallery featured-gallery"
         "games-title games-title"
@@ -95,17 +112,47 @@ li:first-child {
     max-width: 292px;
 }
 
-summary {
+.summary-featured {
     display: grid;
-    margin: 0 auto;
-    grid-template-columns: 60px auto;
-    grid-template-rows: 142px 28px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 8px 8px;
+    grid-auto-flow: row;
     grid-template-areas:
-        "item-image item-image"
-        "item-title item-title";
-    max-width: 292px;
-    font-weight: bold;
+        "gallery gallery gallery gallery"
+        "remarks remarks remarks remarks";
 }
+
+.summary-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 0.2fr auto;
+    gap: 8px 8px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "gallery gallery gallery gallery"
+        "genre genre-text genre-text genre-text"
+        "players players-text players-text players-text"
+        "language language-text language-text language-text"
+        "platform platform-text platform-text platform-text"
+        "toolset toolset-text toolset-text toolset-text"
+        "dependencies dependencies-text dependencies-text dependencies-text"
+        "remarks remarks-text remarks-text remarks-text"
+        "sample sample installer installer";
+}
+
+.media {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px 8px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "media-1 media-2 media-3 media-4"
+        "media-5 media-6 media-7 media-8";
+}
+
+/* Common */
 
 .placeholder {
     background: #f0f0f0;
@@ -116,72 +163,54 @@ summary {
     color: darkgray;
 }
 
+.label {
+    text-align: right;
+    font-family: RobotoBlack;
+    font-weight: bold;
+}
+
+.text {
+    text-align: left;
+    font-family: RobotoBold;
+    color: #585858;
+}
+
+.text ul {
+    margin: 0;
+}
+
 .section>details:first-child {
     margin-top: 8px !important;
 }
 
-.summary-featured {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto 0.5fr;
-    gap: 8px 8px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "image-1 image-2 image-3 image-4"
-        "remarks remarks remarks remarks";
-}
-
-.summary-featured>.remarks {
-    grid-area: remarks;
-    margin: auto;
-    font-size: 15px;
-}
-
-.summary-featured>.image-0 {
-    grid-area: image-1;
-}
-
-.summary-featured>.image-1 {
-    grid-area: image-2;
-}
-
-.summary-featured>.image-2 {
-    grid-area: image-3;
-}
-
-.summary-featured>.image-3 {
-    grid-area: image-4;
-}
-
 /* Areas */
 
-.media {
-    grid-area: media;
+.links {
+    grid-area: links;
 }
 
 .title {
     grid-area: title;
-    font-family: RobotoBold;
+    font-family: RobotoBlack;
     font-size: 20px;
     font-weight: bolder;
 }
 
 .subtitle {
     float: left;
-    font-family: RobotoBold;
+    font-family: RobotoBlack;
     font-size: 17px;
     font-weight: bolder;
     color: darkgray;
 }
 
 .section-title {
-    font-family: RobotoBold;
+    font-family: RobotoBlack;
     font-size: 36px;
     font-weight: bolder;
     text-align: right;
     color: black;
     margin: auto 0;
-    border-bottom: #f0f0f0 4px solid;
 }
 
 .featured-title {
@@ -219,9 +248,10 @@ summary {
 
 .summary-title {
     grid-area: item-title;
-    font-family: RobotoBold;
+    font-size: 18px;
+    font-family: RobotoBlack;
     text-align: left;
-    margin: auto 0;   
+    margin: auto 0;
 }
 
 .footer {
@@ -233,7 +263,7 @@ summary {
 /* Content */
 
 .footer>p {
-    font-family: RobotoBold;
+    font-family: RobotoBlack;
     font-size: 13px;
     font-weight: bold;
     text-align: center;
@@ -278,11 +308,15 @@ summary {
     color: gray;
 }
 
+.gallery {
+    grid-area: gallery;
+}
+
 .year {
     position: absolute;
     top: 8px;
     left: 8px;
-    font-family: RobotoBold;
+    font-family: RobotoBlack;
     font-size: 16px;
     font-weight: bolder;
     color: whitesmoke;
@@ -292,7 +326,7 @@ summary {
 .tech {
     position: absolute;
     right: 8px;
-    font-family: RobotoBold;
+    font-family: RobotoBlack;
     font-size: 16px;
     font-weight: bold;
     color: whitesmoke;
@@ -304,33 +338,22 @@ summary {
 }
 
 .p2 {
-    top: 27px;
+    top: 28px;
 }
 
 .p3 {
-    top: 46px;
+    top: 48px;
 }
 
 .p4 {
-    top: 65px;
+    top: 68px;
 }
 
-.summary-project {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto 0.2fr auto;
-    gap: 8px 8px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "gallery gallery gallery gallery"
-        "genre genre-text genre-text genre-text"
-        "players players-text players-text players-text"
-        "language language-text language-text language-text"
-        "platform platform-text platform-text platform-text"
-        "toolset toolset-text toolset-text toolset-text"
-        "dependencies dependencies-text dependencies-text dependencies-text"
-        "remarks remarks-text remarks-text remarks-text"
-        "sample sample sample sample";
+.summary-featured>.remarks {
+    grid-area: remarks;
+    font-size: 15px;
+    line-height: 1.3;
+    margin: 8px auto;
 }
 
 .summary-project>* {
@@ -338,28 +361,8 @@ summary {
     line-height: 1.3;
 }
 
-.summary-project>.list ul {
-    margin: 0;
-}
-
-.summary-project>.label {
-    text-align: right;
-    font-weight: bold;
-}
-
-.summary-project>.text {
-    text-align: left;
-    font-weight: normal;
-    color: #585858;
-}
-
 .summary-project>.link {
-    text-align: right;
-    font-weight: bold;
-}
-
-.summary-project>.gallery {
-    grid-area: gallery;
+    text-align: center;
 }
 
 .summary-project>.genre {
@@ -396,26 +399,12 @@ summary {
 
 .summary-project>.sample {
     grid-area: sample;
+    margin: auto auto 12px auto;
 }
 
-.summary-project>.video {
-    grid-area: video;
-}
-
-.summary-project>.image-0 {
-    grid-area: image-1;
-}
-
-.summary-project>.image-1 {
-    grid-area: image-2;
-}
-
-.summary-project>.image-2 {
-    grid-area: image-3;
-}
-
-.summary-project>.image-3 {
-    grid-area: image-4;
+.summary-project>.installer {
+    grid-area: installer;
+    margin: auto auto 12px auto;
 }
 
 .summary-project>.remarks {
@@ -424,10 +413,6 @@ summary {
 
 .summary-project>.remarks-text {
     grid-area: remarks-text;
-}
-
-.summary-project>.unused {
-    grid-area: unused;
 }
 
 .summary-project>.platform-text {
@@ -446,45 +431,34 @@ summary {
     grid-area: dependencies-text;
 }
 
-.images {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "image-1 image-2 image-3 image-4"
-        "image-5 image-6 image-7 image-8";
+.media>.media-1 {
+    grid-area: media-1;
 }
 
-.images>.image-1 {
-    grid-area: image-1;
+.media>.media-2 {
+    grid-area: media-2;
 }
 
-.images>.image-2 {
-    grid-area: image-2;
+.media>.media-3 {
+    grid-area: media-3;
 }
 
-.images>.image-3 {
-    grid-area: image-3;
+.media>.media-4 {
+    grid-area: media-4;
 }
 
-.images>.image-4 {
-    grid-area: image-4;
+.media>.media-5 {
+    grid-area: media-5;
 }
 
-.images>.image-5 {
-    grid-area: image-5;
+.media>.media-6 {
+    grid-area: media-6;
 }
 
-.images>.image-6 {
-    grid-area: image-6;
+.media>.media-7 {
+    grid-area: media-7;
 }
 
-.images>.image-7 {
-    grid-area: image-7;
-}
-
-.images>.image-8 {
-    grid-area: image-8;
+.media>.media-8 {
+    grid-area: media-8;
 }

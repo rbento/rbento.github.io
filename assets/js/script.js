@@ -1,8 +1,9 @@
 
-const GALLERY_IMAGE_WIDTH = 67;
-const GALLERY_IMAGE_HEIGHT = 67;
+const MEDIA_IMAGE_WIDTH = 67;
+const MEDIA_IMAGE_HEIGHT = 67;
 
-const galleryItems = [
+const mediaItems = [
+	[/* skip */],
 	[
 		{
 			src: "assets/images/ea-sports-fc-24/ea-sports-fc-24-01.png",
@@ -233,59 +234,30 @@ const galleryItems = [
 ];
 
 $(document).ready(function () {
-	// var magnificPopup = $.magnificPopup.instance;
-	// for (let galleryIndex = 0; galleryIndex < galleryItems.length; galleryIndex++) {
-	// 	let gallery = $("#gallery-" + galleryIndex);
-	// 	gallery.magnificPopup({
-	// 		items: galleryItems[galleryIndex],
-	// 		tLoading: "Loading #%curr%...",
-	// 		mainClass: "mfp-img-mobile",
-	// 		type: 'image',
-	// 		gallery: {
-	// 			enabled: true,
-	// 			navigateByImgClick: true,
-	// 			preload: [1, 2] // Will preload 1 - before current, and 2 after the current image
-	// 		},
-	// 		image: {
-	// 			tError: "<a href='%url%'>The image #%curr%</a> could not be loaded."
-	// 		}
-	// 	}, 0);
-	// }
-
-	// $('#gallery-3').magnificPopup({
-	// 	type: 'image',
-	// 	items: [
-	// 		{
-	// 			src: "assets/images/red-sector-a/red-sector-a-02.png",
-	// 			title: "Ray towers attacking enemies in range<small>[2012] Red Sector A (C#, Unity)</small>",
-	// 			type: 'image',
-	// 		},
-	// 		{
-	// 			src: "assets/images/red-sector-a/red-sector-a-04.png",
-	// 			title: "A* path finding<small>[2012] Red Sector A (C#, Unity)</small>",
-	// 			type: 'image',
-	// 		},
-	// 		{
-	// 			src: "assets/images/red-sector-a/red-sector-a-05.png",
-	// 			title: "Clean project organization<small>[2012] Red Sector A (C#, Unity)</small>",
-	// 			type: 'image'
-	// 		},
-	// 		{
-	// 			src: "https://www.youtube.com/watch?v=GtyTj3LcjBY",
-	// 			title: "YouTube<small>[2012] Red Sector A (C#, Unity)</small>",
-	// 			type: "iframe"
-	// 		}
-	// 	],
-	// 	gallery: {
-	// 		enabled: true,
-	// 	},
-	// });
-
-	$('#gallery-3').magnificPopup({
-		delegate: ".item",
-		type: 'image',
-		gallery: {
-			enabled: true,
-		}
-	});
+	for (let galleryIndex = 1; galleryIndex < galleryItems.length; galleryIndex++) {
+		let galleryImages = $("#gallery-" + galleryIndex);
+		galleryImages.magnificPopup({
+			delegate: ".item",
+			tLoading: "Loading #%curr%...",
+			mainClass: "mfp-img-mobile",
+			type: "image",
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [1, 2] // Will preload 1 - before current, and 2 after the current image
+			},
+			image: {
+				tError: "<a href='%url%'>The image #%curr%</a> could not be loaded."
+			}
+		});
+		let galleryVideo = $("#gallery-" + galleryIndex + " .video");
+		galleryVideo.magnificPopup({
+			disableOn: 700,
+			type: "iframe",
+			mainClass: "mfp-fade",
+			removalDelay: 160,
+			preloader: false,
+			fixedContentPos: false
+		});
+	}
 });

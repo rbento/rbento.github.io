@@ -1,0 +1,203 @@
+
+* {
+    font-family: monospace;
+}
+
+body {
+    margin: 8px;
+    padding: 0;
+    background-color: whitesmoke;
+    overflow: scroll;
+}
+
+a, a:visited, a:focus, a:active {
+    color: steelblue;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: lightsteelblue;
+}
+
+p {
+    line-height: 22px;
+    text-align: justify;
+}
+
+/* Layout */
+
+.site {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 50%;
+    grid-template-rows: 42px 20px auto 48px;
+    grid-template-areas:
+    "title media"
+    "work projects"
+    "gallery gallery"
+    "footer footer";
+    max-width: 292px;
+}
+
+.games {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+    "ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 red-sector-a red-sector-a red-sector-a red-sector-a"
+    "ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 red-sector-a red-sector-a red-sector-a red-sector-a"
+    "ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 red-sector-a red-sector-a red-sector-a red-sector-a"
+    "ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 ea-sports-fc-24 red-sector-a red-sector-a red-sector-a red-sector-a"
+    "madden-nfl-24 madden-nfl-24 madden-nfl-24 madden-nfl-24 raven-attack raven-attack raven-attack raven-attack"
+    "madden-nfl-24 madden-nfl-24 madden-nfl-24 madden-nfl-24 raven-attack raven-attack raven-attack raven-attack"
+    "madden-nfl-24 madden-nfl-24 madden-nfl-24 madden-nfl-24 raven-attack raven-attack raven-attack raven-attack"
+    "madden-nfl-24 madden-nfl-24 madden-nfl-24 madden-nfl-24 raven-attack raven-attack raven-attack raven-attack"
+    "ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour star-ocean star-ocean star-ocean star-ocean"
+    "ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour star-ocean star-ocean star-ocean star-ocean"
+    "ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour star-ocean star-ocean star-ocean star-ocean"
+    "ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour star-ocean star-ocean star-ocean star-ocean";
+    grid-gap: 8px;
+}
+
+/* Areas */
+
+.media {
+    grid-area: media;
+}
+
+.title {
+    grid-area: title;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.subtitle {
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    color: silver;
+}
+
+.column-title {
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.work {
+    grid-area: work;
+}
+
+.side-projects {
+    grid-area: projects;
+}
+
+.gallery {
+    grid-area: gallery;
+}
+
+.footer {
+    grid-area: footer;
+    margin-top: 8px;
+    background: black;
+}
+
+/* Content */
+
+.footer > p {
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.social-media {
+    float: right;
+}
+
+.social-media :last-child {
+    margin-left: -1px;
+    margin-right: 0;
+}
+
+.social-media-icon {
+    margin: 0 5px 0 0;
+    width: 24px;
+    height: 24px;
+}
+
+.social-media-icon > img {
+    width: auto;
+    height: 24px;
+}
+
+.source-code-popup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -360px;
+    margin-top: -270px;
+    width: 720px;
+    height: 540px;
+    line-height: 540px;
+    text-align: center;
+    background: black;
+    color: gray;
+}
+
+/* Gallery - Games */
+
+.ea-sports-fc-24 {
+    grid-area: ea-sports-fc-24;
+}
+
+.madden-nfl-24 {
+    grid-area: madden-nfl-24;
+}
+
+.ea-sports-pga-tour {
+    grid-area: ea-sports-pga-tour;
+}
+
+.red-sector-a {
+    grid-area: red-sector-a;
+}
+
+.star-ocean {
+    grid-area: star-ocean;
+}
+
+.raven-attack {
+    grid-area: raven-attack;
+}
+
+.ai-pong {
+    grid-area: ai-pong;
+}
+
+.crazy-maze {
+    grid-area: crazy-maze;
+}
+
+.ballz-n-cupz {
+    grid-area: ballz-n-cupz;
+}
+
+.paper-cannon {
+    grid-area: paper-cannon;
+}
+
+.woops-ex {
+    grid-area: woops-ex;
+}
+
+.qubz-console {
+    grid-area: qubz-console;
+}
+
+.ballz-n-cupz-ios {
+    grid-area: ballz-n-cupz-ios;
+}
