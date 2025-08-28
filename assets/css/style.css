@@ -54,7 +54,11 @@ p {
     "ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour star-ocean star-ocean star-ocean star-ocean"
     "ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour star-ocean star-ocean star-ocean star-ocean"
     "ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour star-ocean star-ocean star-ocean star-ocean"
-    "ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour star-ocean star-ocean star-ocean star-ocean";
+    "ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour ea-sports-pga-tour star-ocean star-ocean star-ocean star-ocean"
+    "tony-hawk-pro-skater-34 tony-hawk-pro-skater-34 tony-hawk-pro-skater-34 tony-hawk-pro-skater-34 placeholder placeholder placeholder placeholder"
+    "tony-hawk-pro-skater-34 tony-hawk-pro-skater-34 tony-hawk-pro-skater-34 tony-hawk-pro-skater-34 placeholder placeholder placeholder placeholder"
+    "tony-hawk-pro-skater-34 tony-hawk-pro-skater-34 tony-hawk-pro-skater-34 tony-hawk-pro-skater-34 placeholder placeholder placeholder placeholder"
+    "tony-hawk-pro-skater-34 tony-hawk-pro-skater-34 tony-hawk-pro-skater-34 tony-hawk-pro-skater-34 placeholder placeholder placeholder placeholder";
     grid-gap: 8px;
 }
 
@@ -162,6 +166,10 @@ p {
     grid-area: ea-sports-pga-tour;
 }
 
+.tony-hawk-pro-skater-34 {
+    grid-area: tony-hawk-pro-skater-34;
+}
+
 .red-sector-a {
     grid-area: red-sector-a;
 }
@@ -200,4 +208,8 @@ p {
 
 .ballz-n-cupz-ios {
     grid-area: ballz-n-cupz-ios;
+}
+
+.placeholder {
+    grid-area: placeholder;
 }

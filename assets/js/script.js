@@ -19,6 +19,12 @@ const galleryItems = [
 	],
 	[
 		{
+			src: "assets/images/tony-hawk-pro-skater-34/tony-hawk-pro-skater-34-01.png",
+			title: "[2025] Senior Software Engineer - Activision Publishing - Marketing - Maintained the item reward entitlement services</small>",
+		}
+	],
+	[
+		{
 			src: "assets/images/red-sector-a/red-sector-a-01.png",
 			title: "A 3D tower defense game demo<small>[2012] Red Sector A (C#, Unity)</small>",
 		},
